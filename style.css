@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family= Rajdhani :wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Inter:wght@700&family=Julius+Sans+One&family=Nosifer&family=Vollkorn:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.302);
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  background-color: rgba(4, 3, 3, 0.251);
+  box-shadow: 1px 5px 10px rgba(9, 1, 12, 0.24);
+}
+
+.menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.3rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  animation-name: fadeAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+
+.img-beatriz {
+  width: 20%;
+  height: 20%;
+  margin-left: 10%;
+  border-radius: 14%;
+  position: relative;
+  bottom: 10%;
+}
+
+img {
+  margin-left: 10vh;
+  margin-top: 12vh;
+  margin-right: 10vh;
+}
+
+.center {
+  background-color: rgba(0, 0, 0, 0.292);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 0.625rem;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursiva;
+  font-family: 'Fasthand', cursiva;
+  text-shadow: -0.063rem -0.063rem 0 rgb(0, 0, 0), 0.063rem -0.063rem 0 rgb(0, 0, 0), -0.063rem 0.063rem 0 rgb(0, 0, 0), 0.063rem 0.063rem 0 rgb(0, 0, 0);
+}
+
+h2 {
+  margin-top: 1%;
+  color: rgb(245, 243, 243);
+  font-size: 2.5rem;
+  font-family: serif;
+  text-shadow: -0.063rem -0.063rem 0 rgb(245, 74, 0), 0.063rem -0.063rem 0 rgb(245, 74, 0), -0.063rem 0.0630rem rgb(245, 74, 0), 0.063rem 0.063rem 0 rgb(245, 74, 0);
+}
+
+h3 {
+  font-family: 'Rajdhani', sem serifa;
+  font-size: 1.875rem;
+  color: rgb(255, 255, 255);
+}
+
+.redes img {
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.whats {
+  width: 80%;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  padding: 4%;
+  background-color: rgba(0, 0, 0, 0.292);
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+@media (max-width:750px) {
+
+  h1 {
+    padding-left: 10px;
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  h3{
+    font-size: 15px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer p{
+    font-size: 13px;
+  }
+
+  .img-beatriz {
+    width: 185px;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+
+  .redes{
+    margin-right: 50px;
+  }
+
+
+}

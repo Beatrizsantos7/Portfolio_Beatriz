@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="container">
+  <header>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="sobre.html">Sobre mim</a>
+        </li>
+        <li>
+          <a href="habilidades.html">Habilidades</a>
+        </li>
+    </nav>
+  </header>
+  <main>
+    <div id="titulo">
+      <img id="img-titulo" src="img_projetos/nome-removebg.png" alt="nome Beatriz Santos">
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img_projetos/clima_desenho.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img_projetos/lista.tarefa_desenho.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img_projetos/mario_desenho.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img_projetos/robotron_desenho.jpeg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+
+</body>

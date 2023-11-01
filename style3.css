@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.051);
+	background: linear-gradient(270deg, rgba(204, 57, 4, 0.833) 6%, rgba(192, 61, 13, 0.964) 29%, rgba(40, 3, 115, 0.896) 100%);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 450px;
+	margin-left: 550px;
+	
+}
+
+.menu a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 0.3rem;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 20px;
+	animation-name: fadeAnimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 1rem;
+}
+
+.textos {
+	color: white;
+	text-align: center;
+	padding-top: 3%;
+	font-size: 1.45rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@keyframes fadeAnimation {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+#titulo {
+	display: flex;
+	justify-content: center;
+}
+
+#img-titulo {
+	width: 50%;
+	bottom: 50px;
+}
+
+.swiper {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+}

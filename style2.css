@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(270deg, rgba(204, 57, 4, 0.833) 6%, rgba(192, 61, 13, 0.964) 29%, rgba(40, 3, 115, 0.896) 100%);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.051);
+  box-shadow: 1px 5px 10px rgba(9, 1, 12, 0.24);
+}
+
+.menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.3rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  animation-name: fadeAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.textos {
+  color: white;
+  text-align: center;
+  padding-top: 4%;
+  font-size: 1.45rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Great Vibes', cursive;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.png {
+  width: 4.6%;
+  height: 3.5%;
+  padding-top: 3%;
+}
+
+#lista {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+  padding-left: 3%;
+  font-size: 1.45rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+#desenho {
+  display: flex;
+  width: 95%;
+}
+
+@media (max-width:768px) {
+
+  h1 {
+    font-size: 170%;
+    position: absolute;
+    left: 20px;
+    top: 130px;
+
+  }
+
+  main {
+    display: flex;
+    padding-top: 40%;
+
+  }
+
+  #lista {
+    display: block;
+  }
+
+  .png {
+    width: 10%;
+    padding-top: 10px;
+  }
+
+  #desenho {
+   width: 300px;
+   padding-left: 100px;
+  }
+}
